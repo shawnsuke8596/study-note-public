@@ -159,4 +159,14 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
-export default config;
+//export default config;
+
+// docusaurus.config.ts
+export default {
+  url: 'https://shawnsuke8596.github.io',
+  baseUrl: '/study-note-public/',
+  organizationName: 'shawnsuke8596',   // GitHubユーザー名
+  projectName: 'study-note-public',    // リポジトリ名
+  trailingSlash: false,
+  // …
+};
