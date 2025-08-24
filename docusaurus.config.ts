@@ -83,9 +83,9 @@ themes: [
           type: 'docSidebar',
           sidebarId: 'dbSidebar',
           position: 'left',
-          label: 'DB',
+          label: 'Database',
         },
-       {
+        {
           type: 'docSidebar',
           sidebarId: 'ccnaSidebar',
           position: 'left',
@@ -102,6 +102,18 @@ themes: [
           sidebarId: 'githubSidebar',
           position: 'left',
           label: 'GitHub',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'vimSidebar',
+          position: 'left',
+          label: 'vim',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'markdownSidebar',
+          position: 'left',
+          label: 'markdown',
         },
         // add end
         {
