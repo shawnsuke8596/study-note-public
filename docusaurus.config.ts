@@ -1,4 +1,4 @@
-import {themes as prismThemes} from 'prism-react-renderer';
+'shawnsuke8596',import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -12,8 +12,8 @@ const config: Config = {
   url: 'https://shawnsuke8596.github.io',
   baseUrl: '/study-note-public/',
 
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'shawnsuke8596',//GitHubユーザー名
+  projectName: 'study-note-public', //リポジトリ名
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
