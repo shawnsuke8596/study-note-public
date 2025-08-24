@@ -65,26 +65,61 @@ themes: [
   ],
 ],
 
+// ヘッダー
   themeConfig: {
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Study Record Site',
       logo: { alt: 'My Site Logo', src: 'img/logo.svg' },
       items: [
+       // add begin
+        {
+          type: 'docSidebar',
+          sidebarId: 'pythonSidebar',
+          position: 'left',
+          label: 'Python',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'dbSidebar',
+          position: 'left',
+          label: 'DB',
+        },
+       {
+          type: 'docSidebar',
+          sidebarId: 'ccnaSidebar',
+          position: 'left',
+          label: 'CCNA',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'linuxSidebar',
+          position: 'left',
+          label: 'Linux',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'githubSidebar',
+          position: 'left',
+          label: 'GitHub',
+        },
+        // add end
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Tutorial(docusaurus)',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: 'Blog(docusaurus)', position: 'left' },
         {
           href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          label: 'GitHub(docusaurus)',
           position: 'right',
         },
       ],
     },
+
+    // フッター
     footer: {
       style: 'dark',
       links: [
@@ -92,11 +127,34 @@ themes: [
         {
           title: 'Community',
           items: [
-            { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
-            { label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
-            { label: 'X', href: 'https://x.com/docusaurus' },
+            { label: 'Stack Overflow(docusaurus)', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
+            //{ label: 'Discord', href: 'https://discordapp.com/invite/docusaurus' },
+            { label: 'X(docusaurus)', href: 'https://x.com/docusaurus' },
           ],
         },
+        {
+          title: 'IT関連',
+          items: [
+            { label: 'IPA', href: 'https://www.ipa.go.jp/' },
+            { label: 'ap-siken', href: 'https://www.ap-siken.com/' },
+          ],
+        },
+       {
+          title: 'Database Study Site',
+          items: [
+            { label: 'SQLBold', href: 'https://sqlbolt.com/' },
+            { label: 'db-fiddle', href: 'https://www.db-fiddle.com/' },
+
+          ],
+        },
+       {
+          title: 'Network Study Site',
+          items: [
+            { label: 'Cisco Networking Academy', href: 'https://www.netacad.com/' },
+          ],
+        },
+
+/*
         {
           title: 'More',
           items: [
@@ -104,6 +162,7 @@ themes: [
             { label: 'GitHub', href: 'https://github.com/facebook/docusaurus' },
           ],
         },
+*/
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
