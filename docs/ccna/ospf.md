@@ -1,9 +1,11 @@
+---
 id: ospf
 title: OSPF 基本
 sidebar_position: 1
 tags: [ccna, ospf, routing]
+---
 
-bash showLineNumbers
+```bash showLineNumbers
 conf t
 router ospf 1
  network 192.168.10.0 0.0.0.255 area 0
